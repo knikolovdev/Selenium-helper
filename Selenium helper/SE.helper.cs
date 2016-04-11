@@ -37,6 +37,7 @@ namespace Selenium_helper
                 return null;
             }
         }
+        //
         /// <summary>
         /// Shorthand for Driver.FindElement(By.ClassName(className))
         /// </summary>
