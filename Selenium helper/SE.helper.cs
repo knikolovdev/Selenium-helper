@@ -3,6 +3,7 @@ using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -33,11 +34,11 @@ namespace Selenium_helper
             }
             catch
             {
+                SystemSounds.Asterisk.Play();
                 MessageBox.Show(string.Format("Element with Id \"{0}\" not found !", id));
                 return null;
             }
         }
-        //
         /// <summary>
         /// Shorthand for Driver.FindElement(By.ClassName(className))
         /// </summary>
@@ -52,6 +53,7 @@ namespace Selenium_helper
             }
             catch
             {
+                SystemSounds.Asterisk.Play();
                 MessageBox.Show(string.Format("Element with Classname \"{0}\" not found !", className));
                 return null;
             }
@@ -70,6 +72,7 @@ namespace Selenium_helper
             }
             catch
             {
+                SystemSounds.Asterisk.Play();
                 MessageBox.Show(string.Format("Element with Css path \"{0}\" not found !", cssPath));
                 return null;
             }
@@ -88,6 +91,7 @@ namespace Selenium_helper
             }
             catch
             {
+                SystemSounds.Asterisk.Play();
                 MessageBox.Show(string.Format("Element with XPath path \"{0}\" not found !", XPath));
                 return null;
             }
@@ -106,6 +110,7 @@ namespace Selenium_helper
             }
             catch
             {
+                SystemSounds.Asterisk.Play();
                 MessageBox.Show(string.Format("Element with Link text path \"{0}\" not found !", LinkText));
                 return null;
             }
@@ -125,6 +130,7 @@ namespace Selenium_helper
             }
             catch
             {
+                SystemSounds.Asterisk.Play();
                 MessageBox.Show(string.Format("Element with Partial lLink text path \"{0}\" not found !", PartialLinkText));
                 return null;
             }
@@ -151,6 +157,7 @@ namespace Selenium_helper
             }
             catch
             {
+                SystemSounds.Asterisk.Play();
                 MessageBox.Show(string.Format("Element with  Id : \"{0}\" did not appear. Wait time expired !", identifier));
                 return null;
             }
@@ -169,6 +176,7 @@ namespace Selenium_helper
             }
             catch
             {
+                SystemSounds.Asterisk.Play();
                 MessageBox.Show(string.Format("Element with  Class : \"{0}\" did not appear. Wait time expired !", identifier));
                 return null;
             }
@@ -187,6 +195,7 @@ namespace Selenium_helper
             }
             catch
             {
+                SystemSounds.Asterisk.Play();
                 MessageBox.Show(string.Format("Element with  Css : \"{0}\" did not appear. Wait time expired !", identifier));
                 return null;
             }
@@ -205,6 +214,7 @@ namespace Selenium_helper
             }
             catch
             {
+                SystemSounds.Asterisk.Play();
                 MessageBox.Show(string.Format("Element with  XPath : \"{0}\" did not appear. Wait time expired !", identifier));
                 return null;
             }
@@ -223,6 +233,7 @@ namespace Selenium_helper
             }
             catch
             {
+                SystemSounds.Asterisk.Play();
                 MessageBox.Show(string.Format("Element with Link text: \"{0}\" did not appear. Wait time expired !", identifier));
                 return null;
             }
@@ -241,6 +252,7 @@ namespace Selenium_helper
             }
             catch
             {
+                SystemSounds.Asterisk.Play();
                 MessageBox.Show(string.Format("Element with  Partial link text: \"{0}\" did not appear. Wait time expired !", identifier));
                 return null;
             }
